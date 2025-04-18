@@ -15,8 +15,10 @@ class TextNode:
         self.url = url
 
     def __eq__(self, other_node):
+        #Comparison of two TextNodes
         return self.text == other_node.text and self.text_type.value == other_node.text_type.value and self.url ==other_node.url
 
 
     def __repr__(self):
+        #return when a TextNode object is called
         return f"TextNode({self.text}, {self.text_type.value}, {self.url})"
